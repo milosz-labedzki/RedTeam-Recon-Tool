@@ -26,7 +26,7 @@ No dependencies — standard library only.
 
 ## Disclaimer
 
-Built for educational purposes and authorized testing only (own lab, CTFs, engagements with explicit permission).
+Built for educational purposes as part of my red team / pentesting practice. For use only on systems you own or have explicit permission to test (own lab, CTFs, authorized engagements).
 
 ## License
 
