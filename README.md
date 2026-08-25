@@ -5,83 +5,83 @@
 [![Status](https://img.shields.io/badge/Status-Active%20Development-brightgreen.svg)]()
 [![Platform](https://img.shields.io/badge/Platform-Linux-lightgrey.svg)]()
 
-> A modular collection of custom Python scripts for network reconnaissance, target enumeration, and basic security assessments.
+> Modularny zestaw autorskich skryptów w Pythonie do rekonesansu sieciowego, enumeracji celów oraz podstawowych ocen bezpieczeństwa.
 
 ---
 
-## 📑 Table of Contents
+## 📑 Spis treści
 
-- [About](#-about)
-- [Available Modules](#-available-modules)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [Roadmap](#-roadmap)
+- [O projekcie](#-o-projekcie)
+- [Dostępne moduły](#-dostępne-moduły)
+- [Instalacja](#-instalacja)
+- [Użycie](#-użycie)
+- [Roadmapa](#-roadmapa)
 - [Disclaimer](#-disclaimer)
-- [License](#-license)
+- [Licencja](#-licencja)
 
 ---
 
-## 📖 About
+## 📖 O projekcie
 
-**RedTeam Recon Tool** is a collection of independent, lightweight Python scripts, built as part of my cybersecurity portfolio. Each module is self-contained and can be run directly from the project root.
+**RedTeam Recon Tool** to zbiór niezależnych, lekkich skryptów Python, tworzonych jako część mojego portfolio w obszarze cyberbezpieczeństwa. Każdy moduł działa samodzielnie i można go uruchomić bezpośrednio z poziomu katalogu głównego projektu.
 
-The project is developed alongside my Active Directory home lab, with the goal of building a practical toolkit to support hands-on pentesting practice.
+Projekt rozwijany jest równolegle z moim domowym laboratorium Active Directory — celem jest zbudowanie praktycznego zestawu narzędzi wspierających naukę pentestingu.
 
-## 🧩 Available Modules
+## 🧩 Dostępne moduły
 
-| Module | Script Path | Description |
+| Moduł | Ścieżka do skryptu | Opis |
 |---|---|---|
-| **Port Scanner** | `src/scanner.py` | Basic TCP port scanner with domain resolution and fallback target handling. |
+| **Port Scanner** | `src/scanner.py` | Podstawowy skaner portów TCP z rozwiązywaniem nazw domenowych i obsługą fallback dla celu. |
 
-> 📌 More modules will be added as the project grows — see the [Roadmap](#-roadmap).
+> 📌 Kolejne moduły będą dodawane wraz z rozwojem projektu — zobacz [Roadmapę](#-roadmapa).
 
-## ⚙️ Installation
+## ⚙️ Instalacja
 
 ```bash
-# Clone the repository
+# Sklonuj repozytorium
 git clone https://github.com/miloszlabedzki/RedTeam-Recon-Tool.git
 cd RedTeam-Recon-Tool
 
-# (optional) create a virtual environment
+# (opcjonalnie) utwórz środowisko wirtualne
 python3 -m venv venv
 source venv/bin/activate
 
-# install dependencies
+# zainstaluj zależności
 pip install -r requirements.txt
 ```
 
-## 🚀 Usage
+## 🚀 Użycie
 
-Run any module directly from the project root using Python 3:
+Każdy moduł uruchamiany jest bezpośrednio z poziomu katalogu głównego projektu:
 
 ```bash
 python <script_path> [target]
 ```
 
-**Example — port scanning:**
+**Przykład — skanowanie portów:**
 
 ```bash
 python src/scanner.py 192.168.1.10
 ```
 
-## 🗺️ Roadmap
+## 🗺️ Roadmapa
 
-- [ ] Service scanner and banner grabbing
-- [ ] Subdomain enumeration module
-- [ ] Integration with the Active Directory home lab
-- [ ] Export results to JSON/CSV
-- [ ] Simple HTML scan report
+- [ ] Skaner usług i banner grabbing
+- [ ] Moduł enumeracji subdomen
+- [ ] Integracja z Active Directory home labem
+- [ ] Eksport wyników do JSON/CSV
+- [ ] Prosty raport HTML z wynikami skanu
 
 ## ⚠️ Disclaimer
 
-The tools in this repository are built **strictly for educational purposes** and for testing in environments you have **explicit, written authorization** to assess (e.g. your own home lab, CTFs, an authorized pentest engagement). The author is not responsible for any misuse of this software.
+Narzędzia zawarte w tym repozytorium zostały stworzone **wyłącznie w celach edukacyjnych** oraz do testowania w środowiskach, na których użycie masz **wyraźną, pisemną zgodę** (np. własny home lab, CTF, autoryzowany pentest). Autor nie ponosi odpowiedzialności za niewłaściwe użycie tego oprogramowania.
 
-## 📜 License
+## 📜 Licencja
 
-This project is released under the [MIT License](LICENSE).
+Projekt udostępniony na licencji [MIT](LICENSE).
 
 ---
 
 <div align="center">
-Built with 🦊 by <a href="https://github.com/miloszlabedzki">miloszlabedzki</a>
+Zbudowane z 🦊 przez <a href="https://github.com/miloszlabedzki">miloszlabedzki</a>
 </div>
