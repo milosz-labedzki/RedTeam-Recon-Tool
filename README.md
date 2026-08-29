@@ -10,17 +10,17 @@ A modular collection of Python scripts for network reconnaissance and target enu
 | Module | Script Path | Description |
 |---|---|---|
 | Port Scanner | `src/scanner.py` | Basic TCP port scanner with domain resolution and fallback target handling. |
+| Banner Grabber | `src/banner_grabber.py` | Simple banner grabbing tool to retrieve service banners and application headers. |
 
 ## Usage
 
-```bash
-python <script_path> [target]
-```
+Run any module directly from the project root using Python 3:
 
-Example:
-```bash
-python src/scanner.py 192.168.1.10
-```
+    python <script_path> [target]
+
+**Example:**
+
+    python src/banner_grabber.py scanme.nmap.org
 
 No dependencies — standard library only.
 
